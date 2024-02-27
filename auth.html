@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="auth_name">Авторизация пользователя</div>
+    <div class="send_window">
+        <div class="send_form">
+        <div class="senditem">
+          <div class="s_item">
+          <div class="s_select auth_text">
+            Введите приватный ключ авторизации
+        </div>
+            </div>
+          <div class="s_item">
+          <div  class="s_select">
+            <input class= "chose2"type="text" placeholder="Приватный ключ">
+        </div>
+          </div>
+          <a href = "./main.html" class="button header2_btn">Авторизация</a>
+        </div>
+          </div>
+        </div> 
+
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafdff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.auth_name {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.auth_text {
+    font-size: 18px;
+}
+.send_window {
+    margin-top: 70px;
+    height: 300px;
+}
+.button {
+    width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+</style>

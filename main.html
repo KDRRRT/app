@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBlockchain</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="cont1">
+    <div class="sidebar">
+      <div class=" side d-flex flex-column flex-shrink-0 p-3 bg-body-white" >
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">UniBlockchain</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page" data-section="dashboard">
+                <img class="sidebar_icon" src="./pictures/home.png" width="16px" height="16px">
+                <div class="side_name">Главная</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="explore" style="color: black;">
+                <img class="sidebar_icon" src="./pictures/compass.png" width="16px" height="16px">
+                <div class="side_name">Транзакции</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="sell" style="color: black;">
+                <img class="sidebar_icon" src="./pictures/send.png" width="16px" height="16px">
+                <div class="side_name">Перевести</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="swap" style="color: black;">
+                <img class="sidebar_icon" src="./pictures/book.png" width="16px" height="16px">
+                <div class="side_name">Журнал</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link " data-section="bridge" style="color: black;">
+                <img class="sidebar_icon" src="./pictures/forward.png" width="16px" height="16px" fill="none">
+                <div class="side_name">Расширения</div>
+              </a>
+            </li>
+          </ul>
+          <hr>
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Аккаунт</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">Новый кошелек</a></li>
+              <li><a class="dropdown-item" id ="theme_toggle" href="#">Темная тема</a></li>
+              <li><a class="dropdown-item" href="#">Настройки</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Выйти</a></li>
+            </ul>
+          </div>
+        </div>
+
+  </div>
+  </div>
+  <div class="container">
+    <div class="section dashboard" id="dashboard">
+      <div class="header">
+        <div class="header_name">Главная</div>
+        <div class="header_btn">
+          <img class = "mobile_side" src = "./pictures/menu.png" width="32px" height="32px">
+          <img onclick="notif()" src="./pictures/notification-bell.png" width="32px" height="32px"></img></div>
+      </div>
+      <div class="content">
+        <div class="main_card">
+          <div class="adress_name">Адрес кошелька:</div>
+          <div class="card_adress">0x348fe7691e8db0d6eddb01c99ffee9a06e5f3428d205f54317290fcfbd2ba779</div>
+          <div class="adress_name">Баланс:</div>
+          <div class="balance">
+          <span class="card_balance">0</span><div class="card_cur">UBT</div>
+        </div>
+        <div class="balance">
+          <span class="card_balance">30000</span><div class="card_cur">ETH</div>
+        </div>
+        <div class="balance">
+          <span class="card_balance">0</span><div class="card_cur">Tokens</div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="section explore" id="explore">
+      <div class="header">
+        <div class="header_name">Транзакции</div>
+        <div class="header_btn header2">
+        <div class="header2_not" onclick="notif()">
+          <img src="./pictures/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img  class = "mobile_side1" src = "./pictures/menu.png" width="32px" height="32px">
+        </div>
+      </div> <!--header btn-->
+      </div> <!--header-->
+    </div> <!--explore-->
+
+    
+       <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <div class="section sell" id="sell">
+      <div class="header">
+        <div class="header_name">Перевести</div>
+        <div class="header_btn header2">
+        <div class="header2_not" onclick="notif()">
+          <img src="./pictures/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side3" src = "./pictures/menu.png" width="32px" height="32px">
+        </div>
+      </div>
+      </div>
+      <div class="send_window">
+        <div class="send_form">
+        <div class="senditem">
+          <div class="s_item">
+          <div class="s_select">
+            <input class= "chose2"type="text" placeholder="Адрес получателя">
+        </div>
+            </div>
+          <div class="s_item">
+          <div  class="s_select">
+            <input class= "chose2"type="text" placeholder="Валюта">
+        </div>
+          </div>
+          <div class="s_item">
+            <input class= "chose2"type="text" placeholder="Сумма перевода">
+          </div>
+          <button class="button header2_btn">Перевести</button>
+        </div>
+          </div>
+        </div> 
+    </div>  
+    <div class="section swap" id="swap">
+      <div class="header">
+        <div class="header_name">Журнал</div>
+        <div class="header_btn header2">
+        <div class="header2_not" onclick="notif()">
+          <img src="./pictures/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side4" src = "./pictures/menu.png" width="32px" height="32px">
+        </div>
+      </div>
+      </div>
+      <div class="swap_box">
+        <div class="swap_form">
+          <div class="modal_header">
+            <div class="orders_cat">
+              <a href ="#" class="modal_hist_link hist_all" data-order="order-1">Все операции</a>
+              <a href ="#" class="modal_hist_link" data-order="order-2">Переводы</a>
+              <a href ="#" class="modal_hist_link" data-order="order-3">Зачисления</a>
+              <a href ="#" class="modal_hist_link" data-order="order-4">Списания</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="section bridge" id="bridge">
+      <div class="header">
+        <div class="header_name">Расширения</div>
+        <div class="header_btn header2">
+        <div class="header2_not" onclick="notif()">
+          <img src="./pictures/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side5" src = "./pictures/menu.png" width="32px" height="32px">
+        </div>
+      </div>
+      </div>
+      <div class="bridge_window">
+        <div class="bridge_box">
+            <div class="dop_content">
+                <div class="dop_item">Расширение 1</div>
+                <div class="dop_item">Расширение 2</div>
+                <div class="dop_item">Расширение 3</div>
+                <div class="dop_item">Расширение 4</div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+ 
+    </div>
+
+<div class="not_popup">
+<div class="not_modal">
+    <span class="navbar-toggler-icon">&times;</span>
+    <div class="not">Notification 1</div>
+    <div class="not">Notification 2</div>
+    <div class="not">Notification 3</div>
+</div>
+</div>
+<script>
+    $('.navbar-toggler-icon').click(function() {
+$(this).parents('.not_modal').fadeOut();
+return false;
+});
+</script>
+</div>
+
+<script src="./scriptt.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
